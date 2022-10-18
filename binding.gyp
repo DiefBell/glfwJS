@@ -22,6 +22,9 @@
       	[
           "OS=='win'",
           {
+            'include_dirs': [
+              '.',
+              ],
           	"libraries": [
           		"<(glfw)/win32/glfw3dll.lib",
           	]
