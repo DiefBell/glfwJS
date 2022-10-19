@@ -1,5 +1,6 @@
 interface GLFWmonitor {}
-interface GLFWwindow {}
+// interface GLFWwindow {}
+type GLFWwindow = unknown;
 interface GLFWcursor {}
 interface GLFWvidmode {
   width: number;
