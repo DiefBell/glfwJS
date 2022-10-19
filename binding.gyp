@@ -1,13 +1,13 @@
 {
   "variables": {
-    "glfw": "<@(module_root_dir)/libs"
+    "glfw": "<(module_root_dir)/libs",
   },
   "targets": [
     {
       "target_name": "glfwJS",
       "sources": [ "generated/index.c" ],
       "include_dirs": [
-        "<@(module_root_dir)",
+        "<(module_root_dir)",
       ],
       "conditions": [
       [
@@ -22,9 +22,6 @@
       	[
           "OS=='win'",
           {
-            'include_dirs': [
-              '.',
-              ],
           	"libraries": [
           		"<(glfw)/win32/glfw3dll.lib",
           	]

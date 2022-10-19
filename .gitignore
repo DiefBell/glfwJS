@@ -2,3 +2,10 @@ node_modules
 .DS_Store
 templates
 generator
+build/config.gypi
+
+# node-gyp configure results for Windows target
+build/Release
+build/binding.sln
+build/glfwJS.vcxproj
+build/glfwJS.vcxproj.filters
